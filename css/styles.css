@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #757575;
+    --secondary-color: #212121;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --transparent-color: #FFFFFF99;
+    --bcg-color: #2F303A;
+}
+
+body {
+    color: var(--primary-color);
+}
+a {
+    text-decoration: none;
+}
+
+
+/* LOGO */
+
+.logo-header {
+    color: var(--black-color);
+}
+.logo-header .accent {
+    color: var(--accent-color);
+}
+
+/* NAVIGATION */
+
+.site-nav .link {
+    color: var(--secondary-color);
+}
+.contacts-header .link {
+    color: var(--primary-color);
+}
+
+/* HERO */
+
+.hero {
+    background-color: var(--bcg-color);
+}
+.hero-title {
+    color: var(--white-color);
+}
+.hero-button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* FEATURES */
+
+.features .title {
+    color: var(--secondary-color);
+}
+
+/* WORKS */
+
+.section .title {
+    color: var(--secondary-color);
+}
+
+/* TEAM */
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--bcg-color);
+}
+.logo-footer {
+    color: var(--white-color);
+}
+.logo-footer .accent {
+    color: var(--accent-color);
+}
+.contacts-footer .map {
+    color: var(--white-color);
+}
+.contacts-footer .link {
+    color: var(--transparent-color)
+}
