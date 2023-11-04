@@ -9,6 +9,7 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
 }
 a {
@@ -19,6 +20,10 @@ a {
 /* LOGO */
 
 .logo-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
     color: var(--black-color);
 }
 .logo-header .accent {
@@ -28,9 +33,15 @@ a {
 /* NAVIGATION */
 
 .site-nav .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
     color: var(--secondary-color);
 }
 .contacts-header .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
     color: var(--primary-color);
 }
 
@@ -40,9 +51,15 @@ a {
     background-color: var(--bcg-color);
 }
 .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
     color: var(--white-color);
 }
 .hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
     color: var(--white-color);
     background-color: var(--accent-color);
 }
@@ -50,27 +67,54 @@ a {
 /* FEATURES */
 
 .features .title {
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
     color: var(--secondary-color);
+}
+.features .descr {
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 /* WORKS */
 
 .section .title {
+    font-size: 36px;
+    line-height: 1.17;
     color: var(--secondary-color);
 }
 
 /* TEAM */
 
+.team .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+}
+.team .descr {
+    line-height: 1.17;
+}
 /* FOOTER */
 
 .footer {
     background-color: var(--bcg-color);
 }
 .logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
     color: var(--white-color);
 }
 .logo-footer .accent {
     color: var(--accent-color);
+}
+.contacts-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
 }
 .contacts-footer .map {
     color: var(--white-color);
