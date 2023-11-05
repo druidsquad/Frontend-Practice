@@ -6,6 +6,7 @@
     --accent-color: #2196F3;
     --transparent-color: #FFFFFF99;
     --bcg-color: #2F303A;
+    --button-color: #404bbf;
 }
 
 body {
@@ -15,11 +16,27 @@ body {
 a {
     text-decoration: none;
 }
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    outline: 2px solid tomato;
+}
 
 
 /* LOGO */
 
 .logo-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -32,67 +49,166 @@ a {
 
 /* NAVIGATION */
 
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.main-nav {
+    display: flex;
+}
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     color: var(--secondary-color);
 }
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.contacts-header {
+    display: flex;
+}
+.contacts-header .item:not(:last-child) {
+    margin-right: 50px;
+}
 .contacts-header .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     color: var(--primary-color);
 }
+.contacts-header .link:hover,
+.contacts-header .link:focus {
+    color: var(--accent-color);
+}
+
+/* SECTION */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section .title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-color);  
+}
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 /* HERO */
 
 .hero {
+    text-align: center;
     background-color: var(--bcg-color);
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    text-transform: uppercase;
     color: var(--white-color);
 }
 .hero-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
     color: var(--white-color);
     background-color: var(--accent-color);
+    cursor: pointer;
+    border: transparent;
+    border-radius: 4px;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--button-color);
 }
 
 /* FEATURES */
 
-.features .title {
+.features {
+    display: flex;
+}
+.features .item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.features .name {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.17;
     text-transform: uppercase;
     color: var(--secondary-color);
 }
 .features .descr {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
 }
 
 /* WORKS */
 
-.section .title {
-    font-size: 36px;
-    line-height: 1.17;
-    color: var(--secondary-color);
+.works {
+    display: flex;
+}
+.works .item:not(:first-child) {
+    margin-left: 30px;
 }
 
 /* TEAM */
 
-.team .title {
+.cards {
+    display: flex;
+    text-align: center;
+}
+.cards .item:not(:first-child) {
+    margin-left: 30px;
+}
+.cards .name {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
+    color: var(--secondary-color);
 }
-.team .descr {
+
+.cards .descr {
+    margin-top: 0;
+    margin-bottom: 30px;
     line-height: 1.17;
 }
 /* FOOTER */
@@ -101,6 +217,8 @@ a {
     background-color: var(--bcg-color);
 }
 .logo-footer {
+    display: block;
+    padding-top: 60px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -111,6 +229,9 @@ a {
     color: var(--accent-color);
 }
 .contacts-footer {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 60px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
